@@ -1,6 +1,5 @@
 body {
     background-color: #f7f8fc;
-    font-family: 'Nunito', sans-serif;
 }
 
 .wrapper {
@@ -15,6 +14,7 @@ body {
 }
 
 .todo_list h1 {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 36px;
     padding-top: 10px;
@@ -41,7 +41,7 @@ input[type="text"] {
 .add {
     height: 40px;
     width: 40px;
-    background-color: lightsalmon;
+    background-color: mediumaquamarin;
     margin-left: 8px;
     cursor: pointer;
     border-radius: 8px;
@@ -67,34 +67,8 @@ li:last-child {
    border-radius: 0 0 8px 8px;
 }
 
-.done, .delete {
-    float: right;
-    display: none;
-    border: none;
-    margin: -5px 6px 0 0;
-    height: 34px;
-    width: 34px;
-    border-radius: 6px
-}
-
-.done {
-    display: none;
-}
-
 .delete {
-    display:  none;
-}
-
-li:hover .done {
-    display: inline-block;
-    background-color: aquamarine;
-    cursor: pointer;
-}
-
-li:hover .delete {
-    display: inline-block;
-    background-color: lightsalmon;
-    cursor: pointer;
+    float: right;
 }
 
 .completed {
@@ -111,5 +85,5 @@ li:hover .delete {
 }
 
 i {
-    font-size: 19px;
+    font-size: 20px;
 }
