@@ -18,7 +18,6 @@ addButton.addEventListener('click', function() {
         let newTodo =  {
             todo: addMessage.value,
         }
-
         todoList.push(newTodo);
         displayMessages();
         saveInfo();
@@ -35,7 +34,7 @@ function saveInfo() {
 function displayMessages() {
     let displayMessage = '';
     todoList.forEach(function(item, index) {
- 
+        
         displayMessage += `
         <li class="task"> 
         ${item.todo}
@@ -48,35 +47,27 @@ function displayMessages() {
 };
 
 function deleteTask(todo) {
-
     todoList.splice(todo, 1);
-
     displayMessages()
     saveInfo(todoList);
 };
 
 document.querySelectorAll('.task').forEach(task =>
-
     task.addEventListener('click', function() {
       this.classList.toggle('completed');
-
 }));
 
 
 const clearAllButton = document.querySelector('.clearAll');
 
 if (todoList.length != 0) {
-
     clearAllButton.style.display = "block";
-
 };
 
 clearAllButton.addEventListener('click', function() {
-
     if (todoList.length > 0) {
         todoList.length = 0;
     }
-
     displayMessages(); 
     saveInfo();
 });
