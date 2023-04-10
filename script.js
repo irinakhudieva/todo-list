@@ -38,9 +38,8 @@ function displayMessages() {
         displayMessage += `
         <li class="task"> 
         ${item.todo}
-        <button class="delete" onclick='deleteTask()'><i class="fas fa-times" style="color: #ffffff;"></i></button>
-        <button class="done"><i class="fa fa-solid fa-check" style="color: #ffffff;"></i></button>
-        </li>`;    
+        <i class="fas fa-times delete" style="color: #ffffff;" onclick='deleteTask()'></i>
+        </li>`; 
     });
 
     todo.innerHTML = displayMessage;
