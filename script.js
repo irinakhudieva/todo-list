@@ -64,8 +64,11 @@ if (todoList.length != 0) {
 };
 
 clearAllButton.addEventListener('click', function() {
-    if (todoList.length > 0) {
+    let warningDelete = confirm('Вы точно ходите удалить все задачи?');
+    if (warningDelete) {
         todoList.length = 0;
+    } else {
+        todoList;
     }
     displayMessages(); 
     saveInfo();
