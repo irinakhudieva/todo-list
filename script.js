@@ -38,7 +38,7 @@ function displayMessages() {
         displayMessage += `
         <li class="task"> 
         ${item.todo}
-        <i class="fas fa-times delete" style="color: #ffffff;" onclick='deleteTask()'></i>
+        <button class="delete" onclick='deleteTask(${index})'><i class="fas fa-times" style="color: #ffffff;"></i></button>
         </li>`; 
     });
 
